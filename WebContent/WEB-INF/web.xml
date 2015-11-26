@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>NewProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Serv</display-name>
+    <servlet-name>Serv</servlet-name>
+    <servlet-class>com.newproject.Serv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Serv</servlet-name>
+    <url-pattern>/Serv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Try</display-name>
+    <servlet-name>Try</servlet-name>
+    <servlet-class>com.newproject.Try</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Try</servlet-name>
+    <url-pattern>/Try</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Stat</display-name>
+    <servlet-name>Stat</servlet-name>
+    <servlet-class>com.newproject.Stat</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Stat</servlet-name>
+    <url-pattern>/Stat</url-pattern>
+  </servlet-mapping>
+</web-app>
