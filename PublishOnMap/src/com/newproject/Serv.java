@@ -32,12 +32,11 @@ public class Serv extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
-		response.setContentType("text/html");
+		String choice=request.getParameter("class");
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println(" <head>");
 		out.println("<meta charset='utf-8'>");
-		String choice=request.getParameter("class");
 		out.println("<title>Heatmaps  "+choice+"</title>");
 		out.println("<style>");
 		out.println("html, body {");
@@ -75,7 +74,6 @@ public class Serv extends HttpServlet {
 	    out.println("<option value='cricket'>Cricket</option>");
 	    out.println("<option value='football'>Football</option>");
 	    out.println("<option value='basketball'>Basketball</option>");
-	    out.println("<option value='basketball'>Soccer</option>");
 	    out.println("<option value='golf'>Golf</option>");
 	    out.println("</select><input type='submit' value='Submit'><br></form>");
 	    out.println("<div id='floating-panel'>");
@@ -89,7 +87,7 @@ public class Serv extends HttpServlet {
 	    out.println("var map, heatmap;");
 	    out.println("function initMap() {");
 	    out.println(" map = new google.maps.Map(document.getElementById('map'), {");
-	    out.println(" zoom: 1,");
+	    out.println(" zoom: 13,");
 	    out.println(" center: {lat: 37.775, lng: -122.434},");
 	    out.println("  mapTypeId: google.maps.MapTypeId.SATELLITE");
 	    out.println(" });");

@@ -39,4 +39,44 @@
     <servlet-name>Stat</servlet-name>
     <url-pattern>/Stat</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Sentiment</display-name>
+    <servlet-name>Sentiment</servlet-name>
+    <servlet-class>com.newproject.Sentiment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Sentiment</servlet-name>
+    <url-pattern>/Sentiment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Sentiment140</display-name>
+    <servlet-name>Sentiment140</servlet-name>
+    <servlet-class>com.newproject.Sentiment140</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Sentiment140</servlet-name>
+    <url-pattern>/Sentiment140</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Websocketsample</display-name>
+    <servlet-name>Websocketsample</servlet-name>
+    <servlet-class>com.newproject.Websocketsample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Websocketsample</servlet-name>
+    <url-pattern>/Websocketsample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewServ</display-name>
+    <servlet-name>NewServ</servlet-name>
+    <servlet-class>com.newproject.NewServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewServ</servlet-name>
+    <url-pattern>/NewServ</url-pattern>
+  </servlet-mapping>
 </web-app>
